@@ -1,4 +1,8 @@
-const sum = require('./sum.js');
+import sum from './sum.js';
+import capitalize from './capitalize.js'
 
-const four = sum.sum(1, 3);
+    const express = require('express')
+
+const four = sum(1, 3)
 console.log(four);
+console.log(capitalize('four'));

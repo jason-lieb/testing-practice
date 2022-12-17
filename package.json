@@ -7,7 +7,8 @@
     "test": "jest",
     "build": "webpack",
     "watch": "webpack --watch",
-    "deploy-demo": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
+    "deploy-demo": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages",
+    "lint": "eslint src --ext .js"
   },
   "repository": {
     "type": "git",
@@ -22,8 +23,11 @@
   "devDependencies": {
     "@babel/preset-env": "^7.20.2",
     "css-loader": "^6.7.2",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^29.3.1",
+    "prettier": "^2.8.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.0"
